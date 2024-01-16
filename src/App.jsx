@@ -1,13 +1,10 @@
 import "./App.css" 
-import DrawerBasic from "./components/Drawer"
-import BasicModalDialog from "./components/Form"
+import { Header } from "./components/Header"
 function App() {
 
   return (
     <>
-    <DrawerBasic/>
-    <BasicModalDialog/>
-      <h1>Hola mundo</h1>
+    <Header/>
     </>
   )
 }
