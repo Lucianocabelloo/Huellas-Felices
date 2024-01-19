@@ -1,5 +1,5 @@
 
-export default class Usuario {
+export default className Usuario {
     #codigo;
     #nombre;
     #apellido;
