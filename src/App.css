@@ -23,3 +23,29 @@ h1{
     font-size: 18px;
 }
 
+
+.MuiSvgIcon-root{
+    height: 50px;
+    width: 50px;
+}
+
+.mainText{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.box{
+    box-shadow: 13px 14px 7px -6px rgba(0,0,0,0.2);
+-webkit-box-shadow: 13px 14px 7px -6px rgba(0,0,0,0.2);
+-moz-box-shadow: 13px 14px 7px -6px rgba(0,0,0,0.2);
+padding: 20px;
+}
+
+.AboutMain h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    width: 30ch;
+}

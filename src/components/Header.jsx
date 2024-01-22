@@ -48,8 +48,8 @@ export const Header = () => {
         <div className=' w-2/4 h-[500px]'>
           <img className='m-auto h-[625px]' src={headerIMG} alt="Imagen de veterinaria revisando un cachorro" />
         </div>
-        <div className='flex flex-col justify-center items-center gap-6 p-4 w-2/4'>
-          <h1 className=' text-5xl w-[15ch] leading-[55px] font-bold'>VitalPet: Donde la Salud y la Felicidad de tu Mascota se Encuentran</h1>
+        <div className='flex flex-col justify-center items-start gap-6 p-4 w-2/4'>
+          <h1 className=' text-5xl w-[20ch] leading-[55px] font-bold'>VitalPet: Donde la Salud y la Felicidad de tu Mascota se Encuentran</h1>
           <p className='  text-gray-500 font-mono text-justify w-[50ch]'>¡Cuida su felicidad, confía en nuestra experiencia! En nuestra veterinaria, cada ronroneo y ladrido es una historia de bienestar. Porque amamos a tus mascotas tanto como vos.</p>
           <div className='flex gap-5'>
 
@@ -58,17 +58,17 @@ export const Header = () => {
             onClick={function(){}}
             variant="solid"
             size='lg'
-            classNameName='flex gap-3'
+            className='flex gap-3'
           >
             <ChatIcon/>
-          Contactanos  
+          Solicitar Turno  
             </Button>      
           <Button
             color="primary"
             onClick={function(){}}
             variant="solid"
             size='lg'
-            classNameName='flex gap-3'
+            className='flex gap-3'
           >
             <OpenInNew/>
           Ir a Pet Shop  
