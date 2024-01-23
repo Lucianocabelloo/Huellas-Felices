@@ -10,7 +10,7 @@ export const Header = () => {
     <div>
       
 
-<nav className="bg-white border-gray-200 bg-transparent ">
+      <nav className="bg-transparent backdrop-filter backdrop-blur-md border-gray-200">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
         <PetsIcon/>
