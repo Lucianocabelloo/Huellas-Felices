@@ -50,3 +50,6 @@ padding: 20px;
     width: 30ch;
 }
 
+.MuiCard-horizontal{
+    max-width: 600px;
+}
