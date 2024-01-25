@@ -1,23 +1,30 @@
-import React from 'react'
-import VetCard from './VetCard'
-import AddIcon from '@mui/icons-material/Add';
+import React, { useState } from 'react';
+import VetCard from './VetCard';
+import BasicModalDialog from './Form';
 
 const VetsAdministrator = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleAddClick = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <>
-    <h1 className=' text-5xl text-center py-5'>Veterinarios Disponibles</h1>
-    <section className='flex flex-wrap gap-11 items-center p-5'>
+      <h1 className='text-5xl text-center py-5'>Veterinarios Disponibles</h1>
+      <section className='flex flex-wrap gap-11 items-center p-5'>
 
-    <div>
-      <VetCard/>
-    </div>
+        <div>
+          <VetCard />
+        </div>
 
-    <div className=' p-20 border border-slate-300  bg-white hover:bg-[#bfc0c3]	flex justify-center items-center  max-w-[10%] rounded-lg cursor-pointer m-auto lg:m-0'>
-      <AddIcon sx={{ fontSize: 80 }}/>
-    </div>
-    </section>
+        <BasicModalDialog/>
+
+      </section>
+
+      {isModalOpen && <BasicModalDialog onClose={() => setIsModalOpen(false)} />}
     </>
-  )
-}
+  );
+};
 
-export default VetsAdministrator
+export default VetsAdministrator;
