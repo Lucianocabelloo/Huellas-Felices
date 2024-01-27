@@ -46,10 +46,13 @@ const BasicModalDialog = () => {
 
   return (
     <React.Fragment>
+      <div className=' flex justify-center'>
+
       <div
+        
         onClick={() => setOpen(true)}
-        className='p-20 border border-slate-300 bg-white hover:bg-[#bfc0c3] flex justify-center items-center max-w-[10%] rounded-lg cursor-pointer m-auto lg:m-0'
-      >
+        className='p-20 border border-slate-300 bg-white hover:bg-[#bfc0c3] flex justify-center items-center max-w-[10%] rounded-lg cursor-pointer m-auto lg:m-0 '
+        >
         <AddIcon sx={{ fontSize: 80 }} />
       </div>
 
@@ -92,6 +95,7 @@ const BasicModalDialog = () => {
           </form>
         </ModalDialog>
       </Modal>
+        </div>
     </React.Fragment>
   );
 }

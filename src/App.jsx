@@ -2,7 +2,7 @@ import "./App.css"
 import FooterComponent from "./components/Footer"
 import { Header } from "./components/Header"
 import Main from "./components/Main"
-import VetsForm from "./components/VetsAdministrator"
+import VetsAdministrator from "./components/VetsAdministrator"
 function App() {
 
   return (
@@ -10,7 +10,7 @@ function App() {
     {/* <Header/>
     <Main/>
     <FooterComponent/> */}
-    <VetsForm/>
+    <VetsAdministrator/>
         </>
   )
 }

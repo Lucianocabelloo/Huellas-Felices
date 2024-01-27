@@ -7,7 +7,10 @@ import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 
-const VetCard = () => {
+const VetCard = ({ veterinary }) => {
+
+  console.log(veterinary)
+  console.log(veterinary.nombre)
     return (
         <Box
           sx={{
@@ -63,19 +66,18 @@ const VetCard = () => {
           >
             <AspectRatio flex ratio="1" maxHeight={182} sx={{ minWidth: 182 }}>
               <img
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=286"
-                srcSet="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=286&dpr=2 2x"
+          src={veterinary.imagen}
                 loading="lazy"
                 alt=""
               />
             </AspectRatio>
             <CardContent>
-              <Typography fontSize="xl" fontWeight="lg">
-                Alejandro Martinez
-              </Typography>
-              <Typography level="body-sm" fontWeight="lg" textColor="text.tertiary">
-                Veterinario (Especialista en Caninos)
-              </Typography>
+            <Typography fontSize="xl" fontWeight="lg">
+          {veterinary.nombre} {veterinary.apellido}
+        </Typography>
+        <Typography level="body-sm" fontWeight="lg" textColor="text.tertiary">
+          Veterinario ({veterinary.especialidad})
+        </Typography>
               <Sheet
                 sx={{
                   bgcolor: 'background.level1',
@@ -87,24 +89,24 @@ const VetCard = () => {
                   '& > div': { flex: 1 },
                 }}
               >
-                <div>
-                  <Typography level="body-xs" fontWeight="lg">
-                    Turnos Libres
-                  </Typography>
-                  <Typography fontWeight="lg">5</Typography>
-                </div>
-                <div>
-                  <Typography level="body-xs" fontWeight="lg">
-                    Turnos Agendados
-                  </Typography>
-                  <Typography fontWeight="lg">3</Typography>
-                </div>
-                <div>
-                  <Typography level="body-xs" fontWeight="lg">
-                    Consultas Realizadas
-                  </Typography>
-                  <Typography fontWeight="lg">24</Typography>
-                </div>
+               <div>
+            <Typography level="body-xs" fontWeight="lg">
+              Turnos Libres
+            </Typography>
+            <Typography fontWeight="lg">{veterinary.turnosLibres}</Typography>
+          </div>
+          <div>
+            <Typography level="body-xs" fontWeight="lg">
+              Turnos Agendados
+            </Typography>
+            <Typography fontWeight="lg">{veterinary.turnosAgendados}</Typography>
+          </div>
+          <div>
+            <Typography level="body-xs" fontWeight="lg">
+              Consultas Realizadas
+            </Typography>
+            <Typography fontWeight="lg">{veterinary.consultas}</Typography>
+          </div>
               </Sheet>
               <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
                 <Button variant="solid" color="danger">
