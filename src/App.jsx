@@ -1,14 +1,17 @@
 import "./App.css" 
-import DrawerBasic from "./components/Drawer"
-import BasicModalDialog from "./components/Form"
+import FooterComponent from "./components/Footer"
+import { Header } from "./components/Header"
+import Main from "./components/Main"
+import VetsForm from "./components/VetsAdministrator"
 function App() {
 
   return (
     <>
-    <DrawerBasic/>
-    <BasicModalDialog/>
-      <h1>Hola mundo</h1>
-    </>
+    {/* <Header/>
+    <Main/>
+    <FooterComponent/> */}
+    <VetsForm/>
+        </>
   )
 }
 

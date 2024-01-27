@@ -1,6 +1,55 @@
 #root{
-    background-color: black;
+    background-color: rgb(252, 231, 231);
     min-height: 100vh;
-    color: beige;
+    color: black;
     
+}
+
+.header{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1116%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c274 C 144%2c316.4 432%2c519.4 720%2c486 C 1008%2c452.6 1296%2c182.8 1440%2c107L1440 560L0 560z' fill='rgba(218%2c 6%2c 117%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1116'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: 'Salsa', cursive;
+    font-weight: 700;
+}
+
+.header p{
+    font-family: 'Alegreya', serif;
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+
+.MuiSvgIcon-root{
+    height: 50px;
+    width: 50px;
+}
+
+.mainText{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.box{
+    box-shadow: 13px 14px 7px -6px rgba(0,0,0,0.2);
+-webkit-box-shadow: 13px 14px 7px -6px rgba(0,0,0,0.2);
+-moz-box-shadow: 13px 14px 7px -6px rgba(0,0,0,0.2);
+padding: 20px;
+}
+
+.AboutMain h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    width: 30ch;
+}
+
+.MuiCard-horizontal{
+    max-width: 600px;
 }
